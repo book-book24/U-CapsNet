@@ -35,9 +35,9 @@ kwargs = {'num_workers': 1, 'pin_memory': True} if args.cuda else {}
 
 
 def softmax(input, dim=1):
-    transposed_input = input.transpose(dim, len(input.size()) - 1)  # 矩阵的转置
+    transposed_input = input.transpose(dim, len(input.size()) - 1) 
     softmaxed_output = F.softmax(transposed_input.contiguous().view(-1, transposed_input.size(-1)),
-                                 dim=-1)  # contiguous()将内存变为连续的 size(-1)右边的维度
+                                 dim=-1)
     return softmaxed_output.view(*transposed_input.size()).transpose(dim, len(input.size()) - 1)
 
 
