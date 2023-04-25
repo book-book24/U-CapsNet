@@ -1,2 +1,2 @@
 # U-CapsNet
-Code for "Unsupervised Capsule Neural Network Reveals Spatial Features encoded by the brain"
+Code for "Using Unsupervised Capsule Neural Network Reveal Spatial Representations in The Human Brain"
